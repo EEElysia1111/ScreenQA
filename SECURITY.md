@@ -22,6 +22,13 @@
 - DeepSeek API 本身的安全问题（请联系 DeepSeek）
 - 社会工程或用户主动泄露 Key
 
+## 已知限制
+
+- `com.dsh.screenqa.CAPTURE` 是一个导出广播，用于让 TapTap 补丁触发识题。
+  - **Android 14 及以上**：1.0.1 起只接受来自 `com.kieronquinn.app.taptap` 的发送方，并限制 2 秒冷却、每分钟最多 6 次。
+  - **Android 11–13**：系统没有提供广播发送方身份，任何应用都可以触发。请勿在装有不可信应用的设备上开启无障碍。
+- `SettingsActivity` 从 1.0.1 起不再导出，只能从应用内部打开。
+
 ## 发布校验
 
 正式 Release 会提供 APK 的 SHA-256 校验和。请只从本仓库的 Releases 下载。

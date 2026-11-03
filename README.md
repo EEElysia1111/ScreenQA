@@ -126,6 +126,11 @@ OverlayManager（顶部胶囊 / 展开卡片）
 
 无障碍 + 悬浮窗属于高敏感权限组合。请只安装可信来源的 APK，并自行审查源码。
 
+`com.dsh.screenqa.CAPTURE` 是一个导出的广播，用于让 TapTap 补丁触发识题。从 1.0.1 起：
+
+- Android 14 及以上只接受来自 `com.kieronquinn.app.taptap` 的触发，并带 2 秒冷却、每分钟最多 6 次；
+- Android 11–13 没有可靠的发送方身份 API，**任何应用仍可触发**，请勿在装有不可信应用的设备上开启无障碍。
+
 安全问题请见 [SECURITY.md](SECURITY.md)。
 
 ## 许可证

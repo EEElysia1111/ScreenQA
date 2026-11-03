@@ -28,7 +28,7 @@
 
         <activity
             android:name=".SettingsActivity"
-            android:exported="true" />
+            android:exported="false" />
 
         <receiver
             android:name=".CaptureReceiver"
