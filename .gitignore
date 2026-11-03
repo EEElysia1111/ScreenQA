@@ -1,0 +1,32 @@
+# Gradle
+.gradle/
+build/
+app/build/
+
+# Local SDK config (contains your machine path)
+local.properties
+
+# IDE
+.idea/
+*.iml
+.DS_Store
+
+# Native
+.externalNativeBuild/
+.cxx/
+
+# Signing material — never commit
+*.keystore
+*.jks
+keystore.properties
+
+# Build outputs
+*.apk
+*.aab
+*.ap_
+*.dex
+*.class
+
+# Logs / captures
+*.log
+captures/

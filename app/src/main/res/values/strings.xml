@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ScreenQA</string>
+    <string name="tile_label">ScreenQA 识题</string>
+    <string name="capture_service_desc">允许 ScreenQA 静默截取当前屏幕，用于识别题目并显示解析。不会保存截图到相册。</string>
+</resources>
